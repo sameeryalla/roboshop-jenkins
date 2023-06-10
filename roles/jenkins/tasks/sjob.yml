@@ -1,6 +1,6 @@
 - name: check if jenkins job exist or not
   community.general.jenkins_jobs_info:
-    name: {{item.job_name}}
+    name: "{{item.job_name}}"
     user: admin
     password: admin123
     url: http://172.31.88.96:8080
