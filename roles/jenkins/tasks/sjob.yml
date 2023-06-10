@@ -1,5 +1,5 @@
 - name: check if jenkins job exist or not
-  community.general.jenkins_jobs_info:
+  community.general.jenkins_job_info:
     name: "{{item.job_name}}"
     user: admin
     password: admin123
