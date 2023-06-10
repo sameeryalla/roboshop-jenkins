@@ -17,7 +17,7 @@
             <configVersion>2</configVersion>
             <userRemoteConfigs>
                 <hudson.plugins.git.UserRemoteConfig>
-                    <url>https://github.com/sameeryalla/roboshop-jenkins.git</url>
+                    <url>{{ item.git_repo_url }}</url>
                 </hudson.plugins.git.UserRemoteConfig>
             </userRemoteConfigs>
             <branches>
