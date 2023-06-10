@@ -9,7 +9,7 @@
             <options/>
         </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
     </actions>
-    <description>Test-Create_job</description>
+    <description>{{item.job_name}}</description>
     <keepDependencies>false</keepDependencies>
     <properties/>
     <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@3673.v5b_dd74276262">
