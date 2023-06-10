@@ -9,7 +9,7 @@
             <options/>
         </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
     </actions>
-    <description>learn Jenkins</description>
+    <description>Test-Create_job</description>
     <keepDependencies>false</keepDependencies>
     <properties/>
     <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@3673.v5b_dd74276262">
@@ -17,7 +17,7 @@
             <configVersion>2</configVersion>
             <userRemoteConfigs>
                 <hudson.plugins.git.UserRemoteConfig>
-                    <url>{{ item.git_repo_url }}</url>
+                    <url>https://github.com/sameeryalla/roboshop-jenkins.git</url>
                 </hudson.plugins.git.UserRemoteConfig>
             </userRemoteConfigs>
             <branches>

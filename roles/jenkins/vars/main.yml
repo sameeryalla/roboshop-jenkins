@@ -1,3 +1,0 @@
-sjobs:
-    - {git_repo_url: https://github.com/sameeryalla/roboshop-terraform.git, job_name: roboshop-terraform}
-    - {git_repo_url: https://github.com/sameeryalla/roboshop-ansible.git, job_name: roboshop-ansible}
