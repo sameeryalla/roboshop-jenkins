@@ -2,4 +2,4 @@
   ansible.builtin.include_tasks:
     file: sjob.yml
 
-  loop: "{{sjobs}}"
+  loop: "{{ sjobs }}"
