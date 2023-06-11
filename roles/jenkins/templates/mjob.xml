@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject plugin="w                                                                             orkflow-multibranch@756.v891d88f2cd46">
     <actions/>
-    <description></description>
+    <description>multi pipeline job</description>
     <properties/>
     <folderViews class="jenkins.branch.MultiBranchProjectViewHolder" plugin="branc                                                                             h-api@2.1109.vdf225489a_16d">
         <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranch                                                                             Project" reference="../.."/>
