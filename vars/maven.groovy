@@ -31,7 +31,7 @@ def call() {
                     sh 'echo Checkmarx SAST Scan'
                 }
             }
-            tage ('Checkmarx SCA Scan'){
+            stage ('Checkmarx SCA Scan'){
                 steps {
                     sh 'echo Checkmarx SCA Scan'
                 }
