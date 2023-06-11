@@ -20,7 +20,7 @@ def call() {
             }
             stage ('Terraform APPLY'){
                 steps {
-                    sh 'terraform apply -backend-config=env-${env}/state.vfvars'
+                    sh 'terraform apply -auto-approve -var-file=env-${env}/main.tfvars'
                 }
             }
         }
