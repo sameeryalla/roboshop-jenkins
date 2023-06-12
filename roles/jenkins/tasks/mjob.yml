@@ -1,4 +1,4 @@
-- name: check if jenkins job exist or not
+- name: check if jenkins job {{item.job_name}} exist or not
   community.general.jenkins_job_info:
     name: "{{item.job_name}}"
     user: admin
