@@ -14,7 +14,7 @@
     dest: /tmp/test.xml
   when: jenkins_job_status.failed or override
 
-- name: Create Jenkins Jobs - "{{item.job_name}}"
+- name: Create Jenkins Jobs - {{item.job_name}}
   community.general.jenkins_job:
     config: "{{ lookup('file', '/tmp/test.xml') }}"
     name: "{{item.job_name}}"
