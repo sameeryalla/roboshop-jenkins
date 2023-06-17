@@ -35,14 +35,15 @@ def call() {
                 }
             }
             stage ('Release Application'){
-                steps {
-                    when{
-                        expression{
-                           TAG_NAME ==~ '.*'  T
-                        }
+                when{
+                    expression{
+                        env.TAG_NAME ==~ '.*'  T
                     }
+                }
+                steps {
+
                     sh 'env'
-                    sh 'echo Release application'
+                    sh 'curl -v -u admin:admin123 --upload-file server.js http://52.90.86.151:8081/repository/cart/server.js'
                 }
             }
         }
