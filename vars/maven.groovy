@@ -9,6 +9,9 @@ def call() {
             ansiColor('xterm')
         }
 
+        environment {
+            NEXUS = credentials('NEXUS')
+        }
 
         stages {
             stage ('Code Compile'){

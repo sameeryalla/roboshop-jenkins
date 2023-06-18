@@ -8,6 +8,9 @@ def call() {
         options {
             ansiColor('xterm')
         }
+        environment {
+            NEXUS = credentials('NEXUS')
+        }
 
 
         stages {
@@ -40,7 +43,6 @@ def call() {
                     }
                 }
                 steps {
-
                     sh 'echo ${TAG_NAME} >VERSION'
                     sh 'zip -r ${component}-${TAG_NAME}.zip *.ini *.py *.txt VERSION'
                     sh 'curl -v -u ${NEXUS_USR}:${NEXUS_PSW} --upload-file ${component}-${TAG_NAME}.zip http://52.90.86.151:8081/repository/${component}/${component}-${TAG_NAME}.zip'
